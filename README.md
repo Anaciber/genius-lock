@@ -30,7 +30,7 @@ Tools: `acquire_resource`, `release_resource`, `resource_status`.
 ### Python
 
 ```bash
-pip install "git+https://github.com/anaciber/genius-lock.git#subdirectory=python"
+pip install "git+https://github.com/anaciber/genius-lock.git#subdirectory=genius-lock/python"
 ```
 
 ```python
@@ -48,8 +48,7 @@ except Conflict as c:
 ### JavaScript
 
 ```js
-import { GeniusLock, Conflict } from "./js/index.mjs";
-
+   import { GeniusLock, Conflict } from "./genius-lock/js/index.mjs";
 const lock = new GeniusLock("YOUR_KEY");
 const r = await lock.acquire("stock:sku-123:last-unit", "agent-B");
 if (r.ok) { /* sell it */ await lock.release("stock:sku-123:last-unit", "agent-B"); }
