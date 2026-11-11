@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genius-lock"
+version = "0.1.0"
+description = "Collision-free locks for AI agents: every request gets 'yours' or a clean conflict."
+readme = "../README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [{ name = "Data Farm Network, S.L.", email = "ignacio@datafarmnet.com" }]
+keywords = ["ai-agents", "mcp", "locking", "concurrency", "double-booking", "multi-agent"]
+urls = { Homepage = "https://datafarmnet.com/investors/lock.html", Source = "https://github.com/anaciber/genius-lock" }
+
+[tool.setuptools]
+packages = ["genius_lock"]

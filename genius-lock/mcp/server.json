@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.anaciber/genius-lock",
+  "description": "Collision-free locks for AI agents: every request gets 'yours' or a clean conflict, never a double booking.",
+  "repository": { "url": "https://github.com/anaciber/genius-lock", "source": "github" },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dfn-investor-desk.ignacio-89b.workers.dev/lock/mcp",
+      "headers": [
+        { "name": "Authorization", "description": "Bearer YOUR_KEY (free key at https://datafarmnet.com/investors/lock.html)", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}

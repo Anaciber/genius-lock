@@ -1,0 +1,14 @@
+{
+  "name": "genius-lock",
+  "version": "0.1.0",
+  "description": "Collision-free locks for AI agents: every request gets 'yours' or a clean conflict.",
+  "type": "module",
+  "main": "index.mjs",
+  "exports": "./index.mjs",
+  "license": "MIT",
+  "author": "Data Farm Network, S.L. <ignacio@datafarmnet.com>",
+  "homepage": "https://datafarmnet.com/investors/lock.html",
+  "repository": { "type": "git", "url": "https://github.com/anaciber/genius-lock" },
+  "keywords": ["ai-agents", "mcp", "locking", "concurrency", "double-booking", "multi-agent"],
+  "engines": { "node": ">=18" }
+}
